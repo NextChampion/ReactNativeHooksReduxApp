@@ -2,7 +2,7 @@
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
  * @Date: 2020-04-30 17:47:29
- * @LastEditTime: 2020-04-30 17:55:09
+ * @LastEditTime: 2020-04-30 18:27:14
  * @LastEditors: zhangcunxia
  * @Description:Tab路由
  */
@@ -14,7 +14,7 @@ import MineScreen from '../../Screens/TabMine/MineScreen';
 
 const Tab = createBottomTabNavigator();
 
-export default function TabNavigator() {
+function TabNavigator() {
   return (
     <Tab.Navigator>
       <Tab.Screen name="Home" component={HomeScreen} />
@@ -22,3 +22,4 @@ export default function TabNavigator() {
     </Tab.Navigator>
   );
 }
+export default React.memo(TabNavigator);

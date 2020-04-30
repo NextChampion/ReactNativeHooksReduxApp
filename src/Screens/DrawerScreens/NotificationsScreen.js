@@ -2,7 +2,7 @@
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
  * @Date: 2020-04-30 18:08:56
- * @LastEditTime: 2020-04-30 18:19:17
+ * @LastEditTime: 2020-04-30 18:27:33
  * @LastEditors: zhangcunxia
  * @Description:
  */
@@ -17,7 +17,7 @@ const NotificationsScreen = ({navigation}) => {
   );
 };
 
-export default NotificationsScreen;
+export default React.memo(NotificationsScreen);
 
 const styles = StyleSheet.create({
   container: {

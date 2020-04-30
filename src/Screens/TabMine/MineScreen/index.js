@@ -2,7 +2,7 @@
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
  * @Date: 2020-04-30 17:49:49
- * @LastEditTime: 2020-04-30 17:55:25
+ * @LastEditTime: 2020-04-30 18:28:01
  * @LastEditors: zhangcunxia
  * @Description:
  */
@@ -17,7 +17,7 @@ const MineScreen = () => {
   );
 };
 
-export default MineScreen;
+export default React.memo(MineScreen);
 
 const styles = StyleSheet.create({
   container: {

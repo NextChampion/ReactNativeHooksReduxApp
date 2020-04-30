@@ -23,4 +23,4 @@ const HomeDetailScreen = (props) => {
   );
 };
 
-export default HomeDetailScreen;
+export default React.memo(HomeDetailScreen);

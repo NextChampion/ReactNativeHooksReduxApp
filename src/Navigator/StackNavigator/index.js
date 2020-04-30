@@ -2,7 +2,7 @@
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
  * @Date: 2020-04-30 18:13:45
- * @LastEditTime: 2020-04-30 18:17:03
+ * @LastEditTime: 2020-04-30 18:27:03
  * @LastEditors: zhangcunxia
  * @Description:
  */
@@ -24,4 +24,4 @@ function StackNavigator() {
   );
 }
 
-export default StackNavigator;
+export default React.memo(StackNavigator);

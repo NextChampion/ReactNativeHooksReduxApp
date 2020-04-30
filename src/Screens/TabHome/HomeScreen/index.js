@@ -2,7 +2,7 @@
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
  * @Date: 2020-04-30 17:43:44
- * @LastEditTime: 2020-04-30 18:22:56
+ * @LastEditTime: 2020-04-30 18:27:47
  * @LastEditors: zhangcunxia
  * @Description:首页页面
  */
@@ -28,7 +28,7 @@ const HomeScreen = (props) => {
   );
 };
 
-export default HomeScreen;
+export default React.memo(HomeScreen);
 
 const styles = StyleSheet.create({
   container: {
