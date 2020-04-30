@@ -2,7 +2,7 @@
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
  * @Date: 2020-04-30 17:31:27
- * @LastEditTime: 2020-04-30 17:54:12
+ * @LastEditTime: 2020-04-30 18:14:28
  * @LastEditors: zhangcunxia
  * @Description:路由组件
  */
@@ -13,14 +13,12 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import TabNavigator from './TabNavigator';
 import HomeDetailScreen from '../Screens/TabHome/HomeDetailScreen';
+import DrawerNavigator from './DrawerNavigator';
 const Stack = createStackNavigator();
 function Navigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={TabNavigator} />
-        <Stack.Screen name="HomeDetail" component={HomeDetailScreen} />
-      </Stack.Navigator>
+      <DrawerNavigator />
     </NavigationContainer>
   );
 }
