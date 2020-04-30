@@ -2,7 +2,7 @@
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
  * @Date: 2020-04-30 17:43:44
- * @LastEditTime: 2020-04-30 18:20:20
+ * @LastEditTime: 2020-04-30 18:22:56
  * @LastEditors: zhangcunxia
  * @Description:首页页面
  */
@@ -15,9 +15,14 @@ const HomeScreen = (props) => {
     navigation.navigate('HomeDetail', {a: 123});
   };
 
+  const openDrawer = () => {
+    navigation.openDrawer({aaa: 123});
+  };
+
   return (
     <View style={styles.container}>
       <Button onPress={onPress} title={'HomeDetailScreen'} />
+      <Button onPress={openDrawer} title={'openDrawer'} />
       <Text>Home Screen11</Text>
     </View>
   );
