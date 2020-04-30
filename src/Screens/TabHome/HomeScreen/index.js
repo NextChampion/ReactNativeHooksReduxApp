@@ -2,23 +2,34 @@
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
  * @Date: 2020-04-30 17:43:44
- * @LastEditTime: 2020-04-30 17:46:00
+ * @LastEditTime: 2020-04-30 18:01:54
  * @LastEditors: zhangcunxia
  * @Description:首页页面
  */
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
-const index = () => {
+const HomeScreen = (props) => {
+  const {navigation} = props;
+  const onPress = () => {
+    navigation.navigate('HomeDetail', {a: 123});
+  };
   return (
     <View style={styles.container}>
+      <TouchableOpacity onPress={onPress}>
+        <Text>HomeDetailScreen</Text>
+      </TouchableOpacity>
       <Text>Home Screen11</Text>
     </View>
   );
 };
 
-export default index;
+export default HomeScreen;
 
 const styles = StyleSheet.create({
-  container: {flex: 1, alignItems: 'center', justifyContent: 'center'},
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
